@@ -39,13 +39,13 @@ document.addEventListener('keydown', function(event) {
         const prNumber = githubMatch[3];
         
         // Convert to Graphite URL
-        newUrl = `https://app.graphite.dev/github/pr/${owner}/${repo}/${prNumber}`;
+        newUrl = `https://app.graphite.com/github/pr/${owner}/${repo}/${prNumber}`;
       }
     }
     // Check if we're on Graphite
-    else if (currentUrl.includes('app.graphite.dev')) {
-      // Parse Graphite PR URL: https://app.graphite.dev/github/pr/owner/repo/number
-      const graphiteMatch = currentUrl.match(/app\.graphite\.dev\/github\/pr\/([^\/]+)\/([^\/]+)\/(\d+)/);
+    else if (currentUrl.includes('app.graphite.com')) {
+      // Parse Graphite PR URL: https://app.graphite.com/github/pr/owner/repo/number
+      const graphiteMatch = currentUrl.match(/app\.graphite\.com\/github\/pr\/([^\/]+)\/([^\/]+)\/(\d+)/);
       
       if (graphiteMatch) {
         const owner = graphiteMatch[1];
@@ -88,7 +88,7 @@ function openFirstThreePRsInGraphite() {
   
   // Open first 3 PRs in Graphite
   Array.from(uniquePRs).slice(0, 3).forEach(prNumber => {
-    const graphiteUrl = `https://app.graphite.dev/github/pr/${owner}/${repo}/${prNumber}`;
+    const graphiteUrl = `https://app.graphite.com/github/pr/${owner}/${repo}/${prNumber}`;
     window.open(graphiteUrl, '_blank');
   });
 }

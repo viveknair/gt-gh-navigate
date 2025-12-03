@@ -8,7 +8,7 @@
     {
       "matches": [
         "https://github.com/*",
-        "https://app.graphite.dev/*"
+        "https://app.graphite.com/*"
       ],
       "js": ["content.js"]
     }
