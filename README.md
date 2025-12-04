@@ -34,14 +34,14 @@ A Chrome extension that lets you quickly navigate between GitHub and Graphite pu
 
 1. Navigate to any GitHub pull request (e.g., `https://github.com/owner/repo/pull/123`)
 2. Press **Command+O** (Mac) or **Ctrl+O** (Windows/Linux)
-3. You'll be redirected to the same PR in Graphite (`https://app.graphite.dev/github/pr/owner/repo/123`)
+3. You'll be redirected to the same PR in Graphite (`https://app.graphite.com/github/pr/owner/repo/123`)
 4. Press the same shortcut again to go back to GitHub
 
 ## Permissions
 
 This extension requires no special permissions. It only runs on:
 - `github.com` pages
-- `app.graphite.dev` pages
+- `app.graphite.com` pages
 
 ## Troubleshooting
 
